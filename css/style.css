@@ -1216,7 +1216,7 @@ p {
 #guests {
   background-color: #121723;
   padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 89px;
 }
 
 .guests__container {
@@ -1890,6 +1890,7 @@ p {
 
 .playlist__item {
   margin-bottom: 30px;
+  height: 224px;
 }
 
 .playlist__item:not(:nth-child(4n)) {
@@ -2145,7 +2146,7 @@ p {
 }
 
 .we__item img {
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 .we__caption {
@@ -2464,11 +2465,11 @@ p {
 
 .footer {
   justify-content: space-between;
-  padding-bottom: 75px;
+  padding-bottom: 82px;
 }
 
 .footer__logo {
-  margin-bottom: 20px;
+  margin-bottom: 13px;
 }
 
 .footer__social-links {
@@ -2507,7 +2508,7 @@ p {
 }
 
 .footer__s-item:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 
 .footer__item-link {
