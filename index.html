@@ -25,6 +25,11 @@
     <div class="header container">
       <div class="header__top-block flex">
         <img class="header__logo" src="./img/logo.svg" alt="Logo">
+        <button class="burger btn-reset" aria-label="Кнопка меню">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
         <nav class="header__nav">
           <ul class="header__list flex list-reset">
             <li class="header__item">
@@ -43,6 +48,8 @@
               <a href="#" class="header__nav-link">О нас</a>
             </li>
           </ul>
+          <div class="header__nav-zav1"></div>
+          <div class="header__nav-zav2"></div>
         </nav>
         <div class="header__block flex">
           <button class="header__search btn-reset">
@@ -129,6 +136,9 @@
           </ul>
         </nav>
         <div class="header-bot__mid flex">
+          <svg class="header-bot__svg-play" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z" fill="#A1A6B4"/>
+          </svg>
           <div class="header-bot__earlier flex">
             <button class="header-bot__btn1 btn-reset">
               <span class="header-bot__svg">
@@ -843,7 +853,7 @@
           </div>
           <div class="broadcast__archive flex">
             <button class="broadcast__btn btn-reset">Архив</button>
-            <p class="broadcast__descr">
+            <p class="broadcast__descr broadcast__descr-first">
               В архив попадают все передачи, которые&nbsp;вы пропустили!
               Enjoy:)
             </p>
@@ -976,100 +986,85 @@
                   <path d="M13 19L21 27L29 19" stroke-width="2" stroke-linecap="square" />
                 </svg>
               </button>
-              <ul class="guests__s-list ac-panel flex list-reset">
-                <li class="guests__s-item">
-                  <ul class="guests__vs-list tabs-nav list-reset">
-                    <li class="guests__vs-item tabs-nav__item">
-                      <button class="guests__link btn-reset tabs-nav__btn tabs-nab__btn--active" data-path="one">
-                        Сергей Денисов
-                      </button>
-                    </li>
-                    <li class="guests__vs-item tabs-nav__item">
-                      <button class="guests__link btn-reset tabs-nav__btn tabs-nab__btn--active" data-path="two">
-                        Матвей Мечников
-                      </button>
-                    </li>
-                    <li class="guests__vs-item tabs-nav__item">
-                      <button class="guests__link btn-reset tabs-nav__btn tabs-nab__btn--active" data-path="three">
-                        Константин Прусино
-                      </button>
-                    </li>
-                    <li class="guests__vs-item tabs-nav__item">
-                      <button class="guests__link btn-reset tabs-nav__btn tabs-nab__btn--active" data-path="four">
-                        Иван Калитников
-                      </button>
-                    </li>
-                  </ul>
-                </li>
-                <li class="guests__s-item col-lg-3">
-                  <ul class="guests__vs-list tabs-nav list-reset">
-                    <li class="guests__vs-item tabs-nav__item">
-                      <button class="guests__link btn-reset tabs-nav__btn tabs-nab__btn--active" data-path="five">
-                        Евгений Войновский
-                      </button>
-                    </li>
-                    <li class="guests__vs-item tabs-nav__item">
-                      <button class="guests__link btn-reset tabs-nav__btn tabs-nab__btn--active" data-path="six">
-                        Ольга Мартынова
-                      </button>
-                    </li>
-                    <li class="guests__vs-item tabs-nav__item">
-                      <button class="guests__link btn-reset tabs-nav__btn tabs-nab__btn--active" data-path="seven">
-                        Дмитрий Михалок
-                      </button>
-                    </li>
-                    <li class="guests__vs-item tabs-nav__item">
-                      <button class="guests__link btn-reset tabs-nav__btn tabs-nab__btn--active" data-path="eight">
-                        Пётр Пиотровский
-                      </button>
-                    </li>
-                  </ul>
-                </li>
-                <li class="guests__s-item col-lg-3">
-                  <ul class="guests__vs-list tabs-nav list-reset">
-                    <li class="guests__vs-item tabs-nav__item">
-                      <button class="guests__link btn-reset tabs-nav__btn tabs-nab__btn--active" data-path="nine">
-                        Олег Свиридовский
-                      </button>
-                    </li>
-                    <li class="guests__vs-item tabs-nav__item">
-                      <button class="guests__link btn-reset tabs-nav__btn tabs-nab__btn--active" data-path="ten">
-                        Владислав Кауперс
-                      </button>
-                    </li>
-                    <li class="guests__vs-item tabs-nav__item">
-                      <button class="guests__link btn-reset tabs-nav__btn tabs-nab__btn--active" data-path="eleven">
-                        Михаил Пожитников
-                      </button>
-                    </li>
-                    <li class="guests__vs-item tabs-nav__item">
-                      <button class="guests__link btn-reset tabs-nav__btn tabs-nab__btn--active" data-path="twelve">
-                        Георгий Полуян
-                      </button>
-                    </li>
-                  </ul>
-                </li>
-                <li class="guests__s-item col-lg-3">
-                  <ul class="guests__vs-list tabs-nav list-reset">
-                    <li class="guests__vs-item tabs-nav__item">
-                      <button class="guests__link btn-reset tabs-nav__btn tabs-nab__btn--active" data-path="thirteen">
-                        Денис Тельман
-                      </button>
-                    </li>
-                    <li class="guests__vs-item tabs-nav__item">
-                      <button class="guests__link btn-reset tabs-nav__btn tabs-nab__btn--active" data-path="fourteen">
-                        Юрий Горин
-                      </button>
-                    </li>
-                    <li class="guests__vs-item tabs-nav__item">
-                      <button class="guests__link btn-reset tabs-nav__btn tabs-nab__btn--active" data-path="fiveteen">
-                        Максим Сергеев
-                      </button>
-                    </li>
-                    <li class="guests__vs-item tabs-nav__item"></li>
-                  </ul>
-                </li>
-              </ul>
+              <div class="guests__s-list ac-panel flex list-reset">
+                <ul class="guests__s-item list-reset tabs-nav">
+                  <li class="guests__vs-item tabs-nav__item">
+                    <button class="guests__link btn-reset tabs-nav__btn tabs-nab__btn--active" data-path="one">
+                      Сергей Денисов
+                    </button>
+                  </li>
+                  <li class="guests__vs-item tabs-nav__item">
+                    <button class="guests__link btn-reset tabs-nav__btn tabs-nab__btn--active" data-path="two">
+                      Матвей Мечников
+                    </button>
+                  </li>
+                  <li class="guests__vs-item tabs-nav__item">
+                    <button class="guests__link btn-reset tabs-nav__btn tabs-nab__btn--active" data-path="three">
+                      Константин Прусино
+                    </button>
+                  </li>
+                  <li class="guests__vs-item tabs-nav__item">
+                    <button class="guests__link btn-reset tabs-nav__btn tabs-nab__btn--active" data-path="four">
+                      Иван Калитников
+                    </button>
+                  </li>
+                  <li class="guests__vs-item tabs-nav__item">
+                    <button class="guests__link btn-reset tabs-nav__btn tabs-nab__btn--active" data-path="five">
+                      Евгений Войновский
+                    </button>
+                  </li>
+                  <li class="guests__vs-item tabs-nav__item">
+                    <button class="guests__link btn-reset tabs-nav__btn tabs-nab__btn--active" data-path="six">
+                      Ольга Мартынова
+                    </button>
+                  </li>
+                  <li class="guests__vs-item tabs-nav__item">
+                    <button class="guests__link btn-reset tabs-nav__btn tabs-nab__btn--active" data-path="seven">
+                      Дмитрий Михалок
+                    </button>
+                  </li>
+                  <li class="guests__vs-item tabs-nav__item">
+                    <button class="guests__link btn-reset tabs-nav__btn tabs-nab__btn--active" data-path="eight">
+                      Пётр Пиотровский
+                    </button>
+                  </li>
+                  <li class="guests__vs-item tabs-nav__item">
+                    <button class="guests__link btn-reset tabs-nav__btn tabs-nab__btn--active" data-path="nine">
+                      Олег Свиридовский
+                    </button>
+                  </li>
+                  <li class="guests__vs-item tabs-nav__item">
+                    <button class="guests__link btn-reset tabs-nav__btn tabs-nab__btn--active" data-path="ten">
+                      Владислав Кауперс
+                    </button>
+                  </li>
+                  <li class="guests__vs-item tabs-nav__item">
+                    <button class="guests__link btn-reset tabs-nav__btn tabs-nab__btn--active" data-path="eleven">
+                      Михаил Пожитников
+                    </button>
+                  </li>
+                  <li class="guests__vs-item tabs-nav__item">
+                    <button class="guests__link btn-reset tabs-nav__btn tabs-nab__btn--active" data-path="twelve">
+                      Георгий Полуян
+                    </button>
+                  </li>
+                  <li class="guests__vs-item tabs-nav__item">
+                    <button class="guests__link btn-reset tabs-nav__btn tabs-nab__btn--active" data-path="thirteen">
+                      Денис Тельман
+                    </button>
+                  </li>
+                  <li class="guests__vs-item tabs-nav__item">
+                    <button class="guests__link btn-reset tabs-nav__btn tabs-nab__btn--active" data-path="fourteen">
+                      Юрий Горин
+                    </button>
+                  </li>
+                  <li class="guests__vs-item tabs-nav__item">
+                    <button class="guests__link btn-reset tabs-nav__btn tabs-nab__btn--active" data-path="fiveteen">
+                      Максим Сергеев
+                    </button>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="guests__item">
               <button class="guests__btn btn-reset">
@@ -1118,8 +1113,11 @@
             </li>
           </ul>
         </div>
-        <div class="guests__right-block tabs-item tabs-item--active col-lg-4" data-target="six">
-          <img src="./img/o-mar.jpg" alt="#">
+        <div class="guests__right-block tabs-item tabs-item--active" data-target="six">
+          <picture>
+            <source srcset="./img/om-768.png" media="(max-width: 1023px)">
+            <img src="./img/o-mar.jpg" alt="#">
+          </picture>
           <div class="guests__social-link">
             <a href="#" class="guests__soc-link">
               <svg class="guests__inst" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -1476,7 +1474,7 @@
             нам хочется, чтобы вы могли как следует нас расслышать:)
           </p>
           <p class="radio__descr radio__descr-2">
-            Итак, встречайте! Портативный радиоприёмник-колонка W-Wave 1.0 xm.
+            Итак, встречайте! Портативный радиоприёмник-колонка W-Wave 1.0&nbsp;xm.
             Тщательный подбор всех делатей, ручная сборка, качественный звук.
             Пока доступно только 60 штук в 3 цветах, но мы активно трудимся
             над новыми партиями и дизайном. Спешите приобрести!
@@ -1510,7 +1508,11 @@
         <div class="we__content swiper">
           <ul class="we__list list-reset swiper-wrapper flex">
             <li class="we__item swiper-slide">
-              <img src="./img/w1.jpg" alt="#">
+              <picture>
+                <source srcset="./img/w1.jpg" media="(max-width: 1023px)">
+                <source srcset="./img/we-1.png" media="(max-width: 1440px)">
+                <img src="./img/w1.jpg" alt="#">
+              </picture>
               <div class="we__item-block">
                 <h3 class="we__caption title">Дмитрий Гутенберг</h3>
                 <p class="we__descr">
@@ -1519,7 +1521,11 @@
               </div>
             </li>
             <li class="we__item swiper-slide">
-              <img src="./img/w2.jpg" alt="#">
+              <picture>
+                <source srcset="./img/w2.jpg" media="(max-width: 1023px)">
+                <source srcset="./img/we-2.png" media="(max-width: 1440px)">
+                <img src="./img/w2.jpg" alt="#">
+              </picture>
               <div class="we__item-block">
                 <h3 class="we__caption title">Анна Васильева</h3>
                 <p class="we__descr">
@@ -1528,7 +1534,11 @@
               </div>
             </li>
             <li class="we__item swiper-slide">
-              <img src="./img/w3.jpg" alt="#">
+              <picture>
+                <source srcset="./img/w3.jpg" media="(max-width: 1023px)">
+                <source srcset="./img/we-3.png" media="(max-width: 1440px)">
+                <img src="./img/w3.jpg" alt="#">
+              </picture>
               <div class="we__item-block">
                 <h3 class="we__caption title">Пётр Дмитриевский</h3>
                 <p class="we__descr">
@@ -1537,7 +1547,11 @@
               </div>
             </li>
             <li class="we__item swiper-slide">
-              <img src="./img/w4.jpg" alt="#">
+              <picture>
+                <source srcset="./img/w4.jpg" media="(max-width: 1023px)">
+                <source srcset="./img/we-4.png" media="(max-width: 1440px)">
+                <img src="./img/w4.jpg" alt="#">
+              </picture>
               <div class="we__item-block">
                 <h3 class="we__caption title">Татьяна Флеганова</h3>
                 <p class="we__descr">
@@ -1546,14 +1560,22 @@
               </div>
             </li>
             <li class="we__item swiper-slide">
-              <img src="./img/w5.jpg" alt="#">
+              <picture>
+                <source srcset="./img/w5.jpg" media="(max-width: 1023px)">
+                <source srcset="./img/we-5.png" media="(max-width: 1440px)">
+                <img src="./img/w5.jpg" alt="#">
+              </picture>
               <div class="we__item-block">
                 <h3 class="we__caption title">Фёдор Прокопьев</h3>
                 <p class="we__descr">Привет! Я фотограф, музыкант, ведущий</p>
               </div>
             </li>
             <li class="we__item swiper-slide">
-              <img src="./img/w6.jpg" alt="#">
+              <picture>
+                <source srcset="./img/w6.jpg" media="(max-width: 1023px)">
+                <source srcset="./img/we-6.png" media="(max-width: 1440px)">
+                <img src="./img/w6.jpg" alt="#">
+              </picture>
               <div class="we__item-block">
                 <h3 class="we__caption title">Светлана Кортнева</h3>
                 <p class="we__descr">Художник-оформитель. Оформляю</p>

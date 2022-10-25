@@ -29,6 +29,8 @@ tabsBtn.classList.remove('tabs-item--active')});
   });
 });
 
+//swiper
+
 const swiper = new Swiper('.swiper', {
   slidesPerView: 4,
   slidePerGroup: 1,
@@ -41,7 +43,47 @@ const swiper = new Swiper('.swiper', {
   nextEl: '.swiper-button-next',
   prevEl: '.swiper-button-prev',
   },
+  breakpoints: {
+  1441: {
+    slidesPerView: 4,
+  },
+  1024: {
+    slidesPerView: 2,
+  },
+  768: {
+    slidesPerView: 2,
+  }
+  }
   });
+
+  //burger
+
+let burger = document.querySelector('.burger');
+let menu = document.querySelector('.header__nav');
+let menulinks = menu.querySelectorAll('.header__nav-link');
+
+burger.addEventListener('click',
+
+function() {
+
+  burger.classList.toggle('burger--active');
+
+  menu.classList.toggle('header__nav--active');
+
+  document.body.classList.toggle('stop--scroll');
+})
+
+menulinks.forEach(function(el){
+  el.addEventListener('click', function() {
+
+    burger.classList.remove('burger--active');
+
+    menu.classList.remove('header__nav--active');
+
+    document.body.classList.remove('stop--scroll');
+  })
+})
+
 
   //enter-block
 
