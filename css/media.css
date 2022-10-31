@@ -1293,7 +1293,8 @@
   .radio__img{
     background-size: 256px 225px;
     background-position: top;
-    height: 212px;
+    height: 224px;
+    margin-bottom: 39px;
   }
 
   .radio__img img{
