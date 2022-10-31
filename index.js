@@ -50,8 +50,12 @@ const swiper = new Swiper('.swiper', {
   1024: {
     slidesPerView: 2,
   },
-  768: {
+  710: {
     slidesPerView: 2,
+  },
+  320: {
+    slidesPerView: 2.3,
+    spaceBetween: 15,
   }
   }
   });
@@ -61,6 +65,8 @@ const swiper = new Swiper('.swiper', {
 let burger = document.querySelector('.burger');
 let menu = document.querySelector('.header__nav');
 let menulinks = menu.querySelectorAll('.header__nav-link');
+let menuBot = document.querySelector('.header-bot__nav');
+let menuBotLinks = menuBot.querySelectorAll('.header-bot__nav-link');
 
 burger.addEventListener('click',
 
@@ -69,6 +75,8 @@ function() {
   burger.classList.toggle('burger--active');
 
   menu.classList.toggle('header__nav--active');
+
+  menuBot.classList.toggle('header__nav--active');
 
   document.body.classList.toggle('stop--scroll');
 })
