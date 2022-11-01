@@ -92,6 +92,26 @@ menulinks.forEach(function(el){
   })
 })
 
+  //320-btn
+
+  let headerMid = document.querySelector('.header-bot__mid');
+  let btn320 = document.querySelector('.header-bot__320-btn');
+  let headerEarlier = headerMid.querySelectorAll('.header-bot__earlier');
+  let btn320Close = document.querySelector('.header-bot__320-close')
+
+  btn320.addEventListener('click',
+  function() {
+    headerMid.classList.add('header-bot__mid--active');
+    btn320Close.classList.add('header-bot__320-close--active');
+    document.body.classList.add('stop--scroll');
+  })
+
+  btn320Close.addEventListener('click',
+  function() {
+    headerMid.classList.remove('header-bot__mid--active');
+    btn320Close.classList.remove('header-bot__320-close--active');
+    document.body.classList.remove('stop--scroll');
+  })
 
   //enter-block
 
@@ -103,12 +123,14 @@ let btnClose = document.querySelector('.header__enter-svg');
 btnEnter.addEventListener('click',
 function() {
   headerBlock.classList.add('header__enter-block--active');
+  document.body.classList.add('stop--scroll');
 
 })
 
 btnClose.addEventListener('click',
 function() {
   headerBlock.classList.remove('header__enter-block--active');
+  document.body.classList.remove('stop--scroll');
 })
 
 //play-pause
