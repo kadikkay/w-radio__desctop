@@ -368,6 +368,14 @@ p {
   transition: stroke 0.3s ease-in-out;
 }
 
+.header-bot__320-btn{
+  display: none;
+}
+
+.header-bot__320-close{
+  display: none;
+}
+
 .header__enter-svg:hover {
   stroke: #6d31ee;
 }
