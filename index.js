@@ -88,8 +88,43 @@ menulinks.forEach(function(el){
 
     menu.classList.remove('header__nav--active');
 
+    menuBot.classList.remove('header__nav--active');
+
     document.body.classList.remove('stop--scroll');
   })
+})
+
+menuBotLinks.forEach(function(el){
+  el.addEventListener('click', function() {
+
+    burger.classList.remove('burger--active');
+
+    menu.classList.remove('header__nav--active');
+
+    menuBot.classList.remove('header__nav--active');
+
+    document.body.classList.remove('stop--scroll');
+  })
+})
+
+  //search
+
+let headerSearchBlock = document.querySelector('.header__search-block');
+let btnOpen = document.querySelector('.header__search');
+let btnSearchClose = document.querySelector('.header__search-btn');
+
+
+btnOpen.addEventListener('click',
+function() {
+  headerSearchBlock.classList.add('header__search-block--active');
+  //document.body.classList.add('stop--scroll');
+
+})
+
+btnSearchClose.addEventListener('click',
+function() {
+  headerSearchBlock.classList.remove('header__search-block--active');
+  //document.body.classList.remove('stop--scroll');
 })
 
   //320-btn
