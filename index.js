@@ -153,19 +153,20 @@ function() {
 let headerBlock = document.querySelector('.header__enter-block');
 let btnEnter = document.querySelector('.header__enter');
 let btnClose = document.querySelector('.header__enter-svg');
-
+let darkBlock = document.querySelector('.header__dark-block');
 
 btnEnter.addEventListener('click',
 function() {
   headerBlock.classList.add('header__enter-block--active');
   document.body.classList.add('stop--scroll');
-
+  darkBlock.classList.add('header__dark-block--active');
 })
 
 btnClose.addEventListener('click',
 function() {
   headerBlock.classList.remove('header__enter-block--active');
   document.body.classList.remove('stop--scroll');
+  darkBlock.classList.remove('header__dark-block--active');
 })
 
 //play-pause
